@@ -144,14 +144,14 @@ nav.sticky .menu-btn{
     margin-left: -3px;
 }
 .Home .text-three{
-    color: rgb(131, 83, 83);
+    color:white;
     font-size: 40px;
     margin: 5px 0;
 }
 .Home .text-foir{
     font-size: 23px;
     margin: 5px 0;
-    color: var(--black-color);
+    color:white;
 }
 .Home .button button{
     outline: none;
