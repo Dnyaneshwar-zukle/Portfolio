@@ -138,13 +138,13 @@ nav.sticky .menu-btn{
 }
 .Home .text-two{
     font-size: 25px;
-    color: var(--black-color);
+    color: white;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 .Home .text-three{
-    color: var(--black-color);
+    color: white;
     font-size: 40px;
     margin: 5px 0;
 }
