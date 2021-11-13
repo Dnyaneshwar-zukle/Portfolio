@@ -1,0 +1,500 @@
+/*  google font CDN link */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+text-decoration: none;
+scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#ff8882;
+    --black-color:#0e2431;
+    --white-color:#fff;
+}
+body{
+    font-family: sans-serif;
+}
+/*custom Scroll bar css */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: var --primary-color;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var --primary-color;
+}
+/* navbar styling */
+nav{
+    position:fixed ;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+nav.scicky {
+    background-color: pink;
+    padding: 13px 0;
+}
+nav .Navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin:auto;
+}
+nav .Navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color:pink;
+}
+nav.sticky .Navbar .logo a{
+  color:pink;
+}
+nav .Navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav .Navbar .menu li{
+    list-style: none;
+    margin: 0px 8px;
+}
+nav .Navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: 6px 0;
+    transition: all 0.3s ease;
+
+}
+.Navbar .menu a:hover{
+    color: pink;
+}
+nav.sticky {
+    background-color:white;
+    color:pink;
+}
+nav.sticky .media-icons a {color:pink !important;}
+.menu li a{color:pink !important;}
+nav.sticky .menu a:hover{
+    color: var(--black-color);
+} 
+.Navbar .media-icons a{
+    color: pink;
+    font-size: 18px;
+    margin: 0px 6px;
+}
+nav.sticky .media-icons a{
+    color: white;
+}
+/****side navigation menu button css **/
+nav .menu-btn,
+.Navbar .menu .cancle-btn{
+  position: absolute;
+  color: white;
+  right: 30px;
+  top: 20px;
+  font: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+} 
+nav .menu-btn{
+    color: pink;
+}
+nav.sticky .menu-btn{
+    color:pink;
+}
+.Navbar .menu .menu-btn{
+    color: white;
+}
+/***** home section styling. */
+.Home{
+    height:100vh;
+    width: 100%;
+    background: url('../img/Dnyaneshwar.jpeg');
+    background-size:cover ;
+    background-position: center center;
+/*     background-attachment: fixed;*/
+}
+.Home .home-content{
+    width: 90%;
+    height:100%;
+    margin: auto;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.Home .text-one{
+    font-size: 25px;
+    color: var(--black-color);
+}
+.Home .text-two{
+    font-size: 25px;
+    color: var(--black-color);
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.Home .text-three{
+    color: var(--black-color);
+    font-size: 40px;
+    margin: 5px 0;
+}
+.Home .text-foir{
+    font-size: 23px;
+    margin: 5px 0;
+    color: var(--black-color);
+}
+.Home .button button{
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.Home .button button:hover{
+    border-color:pink;
+    background-color:white;
+    color:pink;
+
+}
+/**** About section styling *****/   
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom:40px;
+}
+section .title span{
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: pink;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.About .About-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About .About-details .left{
+    width: 45%;
+}
+.About .left img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius:12px;
+}
+.About .About-details .right{
+    width: 45%;
+}
+section .topic {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.About-details .right p{
+    text-align: justify;
+    color: black;
+}
+section .button button {
+    outline: none;
+    padding :8px 16px;
+    border-radius: 4px;
+    font-size:25px;
+    font-weight:400;
+    border: 2px solid transparent;
+    background:pink;
+    color:white;
+    cursor: pointer ;
+    transition:all 0.4 ease;
+}
+section .button  button:hover{
+    border-color: pink;
+    background-color: white;
+    color: pink;
+}
+/****************My skills***********/
+.skills {
+background-color:#f0f8ff ;
+
+}
+.skills .content{
+    padding: 40px 0;
+}
+.skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-details .text{
+    width: 50%;
+}
+.skills-details p{
+    color: black;
+    text-align: justify;
+}
+.skills .skills-details .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.skills-details .experience .num{
+    color: black;
+    font-size: 80px;
+}
+.skills-details .experience .exp{
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+.skills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box{
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0;
+}
+.skills-details .boxes .topic{
+    font-size: 20px;
+    color: pink;
+}
+.skills-details  .boxes .per{
+    font-size:60px;
+    color: pink;
+}
+/******* my services css ***/
+.Services .boxes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.Services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius:12px;
+    padding: 30px 10px;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+.Services .boxes .box:hover{
+    background-color: orange;
+}
+.Services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: pink;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+    background: white;
+    color: pink;
+}
+.Services .boxes .box:hover .topic,
+.Services .boxes .box:hover p{
+    color:white;
+    transition: all 0.4s ease;
+} 
+/**** contact Me css *****/
+.Contact{
+    background-color: #f0f0f0; ;
+}
+.Contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.Contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+/**** Footer Me css *****/
+footer{
+    background-color: pink;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+}
+footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+footer .text span a{
+    font-weight: 500;
+    color: white;
+}
+footer .text span a:hover {
+    text-decoration: underline;
+}
+/**************   scroll to top button  css********/
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color:white ;
+    background-color:pink ;
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgb(0,0,0,0.15);
+    display: none;
+}
+/***********************Responcive Media Query**************************/
+@media (max-width:1190px) {
+        section .content{
+            width: 80%;
+        }
+}
+@media (max-width:1000px) {
+   .About .About-details{
+       justify-content: center;
+       flex-direction: column;  
+   }
+   .About .About-details .left{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+   }
+   .About .About-details .right {
+       width: 90%;
+       margin: 40px 0;
+   }  
+   .Services .boxes .box{
+       margin: 20px 0;
+       width: calc(100% / 2 - 20px);
+   }
+   
+}
+@media (max-width:900px){
+    .About .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width:750px){
+    nav .Navbar{
+        width: 90%;
+    }
+    nav .Navbar .menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: pink;
+        max-width: 400px;
+        width: 100%;
+        padding-top:60px ;
+        flex-direction:column ;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    .Navbar .active .menu{
+        left: 0;
+    }
+    nav .Navbar .menu a{
+        font-size: 23px;
+        display: block;
+        color: black;
+        margin: 10px 0;
+    }
+    nav.sticky .menu a:hover{
+        color:pink;
+    }
+    nav .Navbar .media-icons{
+        display: none;
+    }
+    nav .menu-btn,
+    .Navbar .menu .cancle-btn{
+        display: block;
+    }
+    .Home .text-two{
+        font-size: 65px;
+    }
+    .Home .text-three{
+        font-size: 35px;
+    }
+    .skills .skills-details{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .skills-details .text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .skills-details .boxes{
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .Services .boxes .b{
+        margin: 20px;
+        width: 100%;
+    }
+    .Contact .text{
+        width: 100%;
+    }
+}
+@media (max-width:750px){
+    .home .text-two{
+        font-size: 55px;
+    }
+    .home .text-three{
+        font-size: 33px;
+    }
+    .skills-details .boxes .per{
+      font-size: 50px;
+      color: pink;
+    }
+
+}
